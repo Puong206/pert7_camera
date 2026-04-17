@@ -28,3 +28,7 @@ final class OpenCameraAndCapture extends CameraEvent {
 final class DeleteImage extends CameraEvent {}
 final class ClearSnackbar extends CameraEvent {}
 final class RequestPermissions extends CameraEvent {}
+
+// kesimpulan: Kode ini mendefinisikan berbagai event yang dapat terjadi dalam aplikasi kamera, 
+// seperti inisialisasi kamera, pengambilan gambar, dan pengaturan fokus. 
+// Setiap event memiliki data yang relevan untuk menjalankan aksi yang sesuai.
