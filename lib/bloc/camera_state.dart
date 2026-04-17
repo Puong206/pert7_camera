@@ -2,8 +2,10 @@ import 'dart:io';
 
 import 'package:camera/camera.dart';
 
+//membatasi akses ke kelas-kelas yang mewarisi CameraState hanya dalam file ini saja
 sealed class CameraState {}
 
+// CameraInitial adalah state awal sebelum kamera diinisialisasi.
 final class CameraInitial extends CameraState {}
 
 // CameraReady adalah state yang menunjukkan bahwa kamera sudah siap digunakan.
@@ -29,4 +31,5 @@ final class CameraReady extends CameraState {
     this.snackbarMessage,
   });
 
+  
 }
