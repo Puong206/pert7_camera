@@ -6,5 +6,16 @@ import 'package:pert7_camera/bloc/camera_state.dart';
 class CameraBloc extends Bloc<CameraEvent, CameraState> {
   late List<CameraDescription> _cameras;
 
-  
+  CameraBloc() : super(CameraInitial()) {
+    on<InitializeCamera>(_onInitialize);
+    on<SwitchCamera>(_onSwitchCamera);
+    on<ToggleFlash>(_onToggleFlash);
+    on<TakePicture>(_onTakePicture);
+    on<TapToFocus>(_onTapToFocus);
+    on<PickImageFromGallery>(_onPickImage);
+    on<OpenCameraAndCapture>(_onOpenCamera);
+    on<DeleteImage>(_onDeleteImage);
+    on<ClearSnackbar>(_onClearSnackbar);
+    on<RequestPermissions>(_onRequestPermissions);
+  }
 }
