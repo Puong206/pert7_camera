@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 
 //membatasi akses ke kelas-kelas yang mewarisi CameraEvent hanya dalam file ini saja
