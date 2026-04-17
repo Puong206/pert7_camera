@@ -1,5 +1,6 @@
 import 'dart:io';
 
+//membatasi akses ke kelas-kelas yang mewarisi CameraEvent hanya dalam file ini saja
 sealed class CameraEvent {}
 
 final class InitializeCamera extends CameraEvent {}
