@@ -45,5 +45,7 @@ class CameraBloc extends Bloc<CameraEvent, CameraState> {
         : s.flashMode == FlashMode.auto
             ? FlashMode.always
             : FlashMode.off;
+    await s.controller.setFlashMode(next);
+    emit(s.copyWith(flashMode: next));        
   }
 }
